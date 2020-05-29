@@ -78,6 +78,9 @@ TxtName.AspNetCore.UEditor.AliyunOSS		| [![NuGet](https://img.shields.io/nuget/v
         
         //其他配置
     }
+    
+#### UEditor编辑器配置说明
+##### 使用上传至阿里云OSS时所有xxUrlPrefix需要设置为""，以免造成上传的文件无法在编辑器中展示
 ---
 
 # 其他
