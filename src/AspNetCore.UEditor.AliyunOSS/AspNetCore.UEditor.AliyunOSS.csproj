@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>TxtName.AspNetCore.UEditor.AliyunOSS</AssemblyName>
+    <RootNamespace>TxtName.AspNetCore.UEditor.AliyunOSS</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>txtName</Authors>
+    <Company>txtName.cn</Company>
+    <PackageProjectUrl>https://github.com/txtname-cn/TxtName.AspNetCore.UEditor</PackageProjectUrl>
+    <Copyright>Copyright © 2020 txtname.cn. All rights reserved.</Copyright>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <Description>用于AspNetCore的UEditor编辑器服务，资源全部上传至阿里云OSS</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\AspNetCore.TxtName.UEditor.AliyunOSS.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netcoreapp2.2\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\Release\netcoreapp2.2\</OutputPath>
+    <DocumentationFile>bin\Release\netcoreapp2.2\AspNetCore.TxtName.UEditor.AliyunOSS.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aliyun.OSS.SDK.NetCore" Version="2.10.0" />
+    <PackageReference Include="TxtName.AspNetCore.UEditor.Core" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
